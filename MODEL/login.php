@@ -14,8 +14,10 @@ public function hach_password($password)
 // insert in data base
 public function insert($sql)
     {   
-        //echo"<br> hello ";
+           //echo"<br> hello ";
+        
         $result = mysqli_query($this->conn,$sql);
+
         // echo"<br> hello ";
         if (!$result) {
             echo mysqli_error($this->conn);

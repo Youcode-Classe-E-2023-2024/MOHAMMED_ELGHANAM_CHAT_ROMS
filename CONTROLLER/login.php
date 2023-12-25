@@ -2,6 +2,7 @@
 session_start();
 include '..\MODEL\login.php';
 $db = new CHAT();
+echo"med";
 
 if (isset($_POST['send'])){
 
