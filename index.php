@@ -37,7 +37,8 @@
           </div>
           <div class="text-center sm:text-right  whitespace-nowrap">
             <button class="transition duration-200 mx-5 px-5 py-4 cursor-pointer font-normal text-sm rounded-lg text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-200 focus:ring-2 focus:ring-gray-400 focus:ring-opacity-50 ring-inset">
-                sign up
+                <a href="chat.php">sign up</a>
+                
             </button>
           </div>
         </div>
