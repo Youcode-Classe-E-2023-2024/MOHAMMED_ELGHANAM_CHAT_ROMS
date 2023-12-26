@@ -128,6 +128,7 @@
                     <h3 class="text-white mb-1 font-bold text-xl ">
                         <span class="text-gray-400">#</span> general
                     </h3>
+                    <a href="../CONTROLLER/logout.php">LOG OUT</a>
                 </div>
             </div>
             <!-- Chat messages -->

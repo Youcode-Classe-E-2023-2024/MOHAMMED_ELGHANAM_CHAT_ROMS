@@ -26,7 +26,7 @@
                     <img src="https://cdn.discordapp.com/embed/avatars/0.png" alt="">
                     
                 </div>
-                <a href="./profil.php" class=" font-bold text-xl text-white">LOGOUT</a> 
+                <a href="./profil.php" class=" font-bold text-xl text-white">View profil</a> 
             </div>
 
             <hr class=" mb-2">

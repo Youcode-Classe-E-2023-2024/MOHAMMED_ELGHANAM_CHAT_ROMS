@@ -11,7 +11,7 @@ class create_room extends config{
             echo mysqli_error($this->conn);
         }else { 
             echo"NADI";        
-            header("Location:..\VIEW\chat.php");
+            header("Location:../VIEW/chat.php");
         }
     }
 
