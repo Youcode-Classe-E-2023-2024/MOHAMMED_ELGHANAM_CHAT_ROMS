@@ -26,19 +26,19 @@
                     <img src="https://cdn.discordapp.com/embed/avatars/0.png" alt="">
                     
                 </div>
-                <h6 class=" font-bold text-xl text-white">facebook</h6> 
+                <a href="../CONTROLLER/logout.php" class=" font-bold text-xl text-white">LOGOUT</a> 
             </div>
 
             <hr class=" mb-2">
 
-            <div class="cursor-pointer mb-1 p-2 flex gap-3 items-center border border-gray-900 rounded-lg hover:bg-gray-700">
+            <a href="./profil.php" class="cursor-pointer mb-1 p-2 flex gap-3 items-center border border-gray-900 rounded-lg hover:bg-gray-700">
                 <div
                     class="bg-white h-12 w-12 flex items-center justify-center text-black text-2xl font-semibold rounded-3xl mb-1 overflow-hidden">
                     <img src="https://cdn.discordapp.com/embed/avatars/0.png" alt="">
                     
                 </div>
-                <h6 class=" font-bold text-xl text-white">facebook</h6> 
-            </div>
+                <h6 class=" font-bold text-xl text-white">profil</h6> 
+            </a>
 
 
 
@@ -105,7 +105,7 @@
             </div>
 
 
-            <div class="cursor-pointer p-1 flex gap-2 border border-gray-900 rounded-lg hover:bg-gray-700">
+            <a href="./create_room.php" class="cursor-pointer p-1 flex gap-2 border border-gray-900 rounded-lg hover:bg-gray-700">
                 <div
                     class="bg-white opacity-25 h-9 w-9 flex items-center justify-center text-black text-2xl font-semibold rounded-3xl mb-1 overflow-hidden">
                     <svg class="fill-current h-10 w-10 block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -114,7 +114,7 @@
                     </svg>
                 </div>
                 <p class=" text-gray-600 font-bold">ADD ROMS</p>
-            </div>
+            </a>
 
 
 
