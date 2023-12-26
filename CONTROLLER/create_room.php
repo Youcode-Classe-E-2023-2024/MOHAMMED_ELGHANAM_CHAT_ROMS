@@ -1,7 +1,7 @@
 <?php
 session_start();
-include '..\MODEL\login.php';
-$db = new CHAT();
+include '..\MODEL\create_room.php';
+$db = new create_room();
 if (isset($_POST['send'])){
     $creator = $_SESSION['user_id'];
     $name_room = $_POST['name_room'];
