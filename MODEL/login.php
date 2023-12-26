@@ -20,7 +20,7 @@ public function insert($sql)
         if (!$result) {
             echo mysqli_error($this->conn);
         }else { 
-            echo"error";        
+            echo"NADIIII";        
             header("Location:..\VIEW\login.php");
         }
     }
