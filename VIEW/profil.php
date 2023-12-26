@@ -1,107 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
 </head>
+
 <body>
-    
+
+
+
 
     <!-- component -->
-<link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css">
-<link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+    <!-- Inspired by slack ui clone https://tailwindcomponents.com/component/slack-clone-1 -->
 
-<main class="profile-page">
-  <section class="relative block h-500-px">
-    <div class="absolute top-0 w-full h-full bg-center bg-cover" style="
-            background-image: url('https://images.unsplash.com/photo-1499336315816-097655dcfbda?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=2710&amp;q=80');
-          ">
-      <span id="blackOverlay" class="w-full h-full absolute opacity-50 bg-black"></span>
-    </div>
-    <div class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden h-70-px" style="transform: translateZ(0px)">
-      <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
-        <polygon class="text-blueGray-200 fill-current" points="2560 0 2560 100 0 100"></polygon>
-      </svg>
-    </div>
-  </section>
-  <section class="relative py-16 bg-blueGray-200">
-    <div class="container mx-auto px-4">
-      <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64">
-        <div class="px-6">
-          <div class="flex flex-wrap justify-center">
-            <div class="w-full lg:w-3/12 px-4 lg:order-2 flex justify-center">
-              <div class="relative">
-                <img alt="..." src="https://demos.creative-tim.com/notus-js/assets/img/team-2-800x800.jpg" class="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-150-px">
-              </div>
-            </div>
-            <div class="w-full lg:w-4/12 px-4 lg:order-3 lg:text-right lg:self-center">
-              <div class="py-6 px-3 mt-32 sm:mt-0">
-                <button class="bg-pink-500 active:bg-pink-600 uppercase text-white font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none sm:mr-2 mb-1 ease-linear transition-all duration-150" type="button">
-                  Connect
-                </button>
-              </div>
-            </div>
-            <div class="w-full lg:w-4/12 px-4 lg:order-1">
-              <div class="flex justify-center py-4 lg:pt-4 pt-8">
-                <div class="mr-4 p-3 text-center">
-                  <span class="text-xl font-bold block uppercase tracking-wide text-blueGray-600">22</span><span class="text-sm text-blueGray-400">Friends</span>
+    <div class="font-sans antialiased w-full h-screen flex">
+        <!-- Sidebar / channel list -->
+        <div class="bg-gray-900 text-purple-lighter flex-none w-1/4 p-6 hidden md:block overflow-scroll">
+
+            <div class="cursor-pointer mb-1 p-2 flex gap-3 items-center border border-gray-900 rounded-lg hover:bg-gray-700">
+                <div
+                    class="bg-white h-12 w-12 flex items-center justify-center text-black text-2xl font-semibold rounded-3xl mb-1 overflow-hidden">
+                    <img src="https://cdn.discordapp.com/embed/avatars/0.png" alt="">
+                    
                 </div>
-                <div class="mr-4 p-3 text-center">
-                  <span class="text-xl font-bold block uppercase tracking-wide text-blueGray-600">10</span><span class="text-sm text-blueGray-400">Photos</span>
+                <a href="" class=" font-bold text-xl text-white">NAME USER</a> 
+            </div>
+
+            <hr class=" mb-2">
+
+            <a href="./profil.php" class="cursor-pointer mb-1 p-2 flex gap-3 items-center border border-gray-900 rounded-lg hover:bg-gray-700">
+                <div
+                    class="bg-white h-12 w-12 flex items-center justify-center text-black text-2xl font-semibold rounded-3xl mb-1 overflow-hidden">
+                    <img src="https://cdn.discordapp.com/embed/avatars/0.png" alt="">
+                    
                 </div>
-                <div class="lg:mr-4 p-3 text-center">
-                  <span class="text-xl font-bold block uppercase tracking-wide text-blueGray-600">89</span><span class="text-sm text-blueGray-400">Comments</span>
+                <h6 class=" font-bold text-xl text-white">profil</h6> 
+            </a>
+
+
+
+            <div class="cursor-pointer mb-1 p-2 flex gap-3 items-center border border-gray-900 rounded-lg hover:bg-gray-700">
+                <div
+                    class="bg-white h-12 w-12 flex items-center justify-center text-black text-2xl font-semibold rounded-3xl mb-1 overflow-hidden">
+                    <img src="https://cdn.discordapp.com/embed/avatars/0.png" alt="">
+                    
                 </div>
-              </div>
+                <h6 class=" font-bold text-xl text-white">facebook</h6> 
             </div>
-          </div>
-          <div class="text-center mt-12">
-            <h3 class="text-4xl font-semibold leading-normal text-blueGray-700 mb-2">
-              Jenna Stones
-            </h3>
-            <div class="text-sm leading-normal mt-0 mb-2 text-blueGray-400 font-bold uppercase">
-              <i class="fas fa-map-marker-alt mr-2 text-lg text-blueGray-400"></i>
-              Los Angeles, California
+
+            <div class="cursor-pointer mb-1 p-2 flex gap-3 items-center border border-gray-900 rounded-lg hover:bg-gray-700">
+                <div
+                    class="bg-white h-12 w-12 flex items-center justify-center text-black text-2xl font-semibold rounded-3xl mb-1 overflow-hidden">
+                    <img src="https://cdn.discordapp.com/embed/avatars/0.png" alt="">
+                    
+                </div>
+                <h6 class=" font-bold text-xl text-white">facebook</h6> 
             </div>
-            <div class="mb-2 text-blueGray-600 mt-10">
-              <i class="fas fa-briefcase mr-2 text-lg text-blueGray-400"></i>Solution Manager - Creative Tim Officer
+            <div class="cursor-pointer mb-1 p-2 flex gap-3 items-center border border-gray-900 rounded-lg hover:bg-gray-700">
+                <div
+                    class="bg-white h-12 w-12 flex items-center justify-center text-black text-2xl font-semibold rounded-3xl mb-1 overflow-hidden">
+                    <img src="https://cdn.discordapp.com/embed/avatars/0.png" alt="">
+                    
+                </div>
+                <h6 class=" font-bold text-xl text-white">facebook</h6> 
             </div>
-            <div class="mb-2 text-blueGray-600">
-              <i class="fas fa-university mr-2 text-lg text-blueGray-400"></i>University of Computer Science
+            
+            <div class="cursor-pointer mb-1 p-2 flex gap-3 items-center border border-gray-900 rounded-lg hover:bg-gray-700">
+                <div
+                    class="bg-white h-12 w-12 flex items-center justify-center text-black text-2xl font-semibold rounded-3xl mb-1 overflow-hidden">
+                    <img src="https://cdn.discordapp.com/embed/avatars/0.png" alt="">
+                    
+                </div>
+                <h6 class=" font-bold text-xl text-white">facebook</h6> 
             </div>
-          </div>
-          <div class="mt-10 py-10 border-t border-blueGray-200 text-center">
-            <div class="flex flex-wrap justify-center">
-              <div class="w-full lg:w-9/12 px-4">
-                <p class="mb-4 text-lg leading-relaxed text-blueGray-700">
-                  An artist of considerable range, Jenna the name taken by
-                  Melbourne-raised, Brooklyn-based Nick Murphy writes,
-                  performs and records all of his own music, giving it a
-                  warm, intimate feel with a solid groove structure. An
-                  artist of considerable range.
-                </p>
-                <a href="#pablo" class="font-normal text-pink-500">Show more</a>
-              </div>
+
+            <div class="cursor-pointer mb-1 p-2 flex gap-3 items-center border border-gray-900 rounded-lg hover:bg-gray-700">
+                <div
+                    class="bg-white h-12 w-12 flex items-center justify-center text-black text-2xl font-semibold rounded-3xl mb-1 overflow-hidden">
+                    <img src="https://cdn.discordapp.com/embed/avatars/0.png" alt="">
+                    
+                </div>
+                <h6 class=" font-bold text-xl text-white">facebook</h6> 
             </div>
-          </div>
+
+            <div class="cursor-pointer mb-1 p-2 flex gap-3 items-center border border-gray-900 rounded-lg hover:bg-gray-700">
+                <div
+                    class="bg-white h-12 w-12 flex items-center justify-center text-black text-2xl font-semibold rounded-3xl mb-1 overflow-hidden">
+                    <img src="https://cdn.discordapp.com/embed/avatars/0.png" alt="">
+                    
+                </div>
+                <h6 class=" font-bold text-xl text-white">facebook</h6> 
+            </div>
+
+            <div class="cursor-pointer mb-1 p-2 flex gap-3 items-center border border-gray-900 rounded-lg hover:bg-gray-700">
+                <div
+                    class="bg-white h-12 w-12 flex items-center justify-center text-black text-2xl font-semibold rounded-3xl mb-1 overflow-hidden">
+                    <img src="https://cdn.discordapp.com/embed/avatars/0.png" alt="">
+                    
+                </div>
+                <h6 class=" font-bold text-xl text-white">facebook</h6> 
+            </div>
+
+
+            <a href="./create_room.php" class="cursor-pointer p-1 flex gap-2 border border-gray-900 rounded-lg hover:bg-gray-700">
+                <div
+                    class="bg-white opacity-25 h-9 w-9 flex items-center justify-center text-black text-2xl font-semibold rounded-3xl mb-1 overflow-hidden">
+                    <svg class="fill-current h-10 w-10 block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                        <path
+                            d="M16 10c0 .553-.048 1-.601 1H11v4.399c0 .552-.447.601-1 .601-.553 0-1-.049-1-.601V11H4.601C4.049 11 4 10.553 4 10c0-.553.049-1 .601-1H9V4.601C9 4.048 9.447 4 10 4c.553 0 1 .048 1 .601V9h4.399c.553 0 .601.447.601 1z" />
+                    </svg>
+                </div>
+                <p class=" text-gray-600 font-bold">ADD ROMS</p>
+            </a>
+
+
+
         </div>
-      </div>
-    </div>
-    <footer class="relative bg-blueGray-200 pt-8 pb-6 mt-8">
-  <div class="container mx-auto px-4">
-    <div class="flex flex-wrap items-center md:justify-between justify-center">
-      <div class="w-full md:w-6/12 px-4 mx-auto text-center">
-        <div class="text-sm text-blueGray-500 font-semibold py-1">
-          Made with <a href="https://www.creative-tim.com/product/notus-js" class="text-blueGray-500 hover:text-gray-800" target="_blank">Notus JS</a> by <a href="https://www.creative-tim.com" class="text-blueGray-500 hover:text-blueGray-800" target="_blank"> Creative Tim</a>.
+        
+        <!-- Chat content -->
+        <div class="flex-1 flex flex-col w-3/4 bg-gray-700 overflow-hidden">
+            <!-- Top bar -->
+            <div class="border-b border-gray-600 flex px-6 py-2 items-center flex-none shadow-xl">
+                <div class="flex flex-col">
+                    <h3 class="text-white mb-1 font-bold text-xl ">
+                        <span class="text-gray-400">#</span> general
+                    </h3>
+                </div>
+            </div>
+            <!-- Chat messages -->
+            <div class="px-6 py-4 flex-1 overflow-y-scroll">
+----
+
+    <div class="flex-1 h-fit">
+            
+            
+            <!-- Chat Messages -->
+            
+               <!-- Incoming Message -->
+               <div class="flex mb-4 cursor-pointer">
+                 <div class="w-9 h-9 rounded-full flex items-center justify-center mr-2">
+                   <img src="https://placehold.co/200x/ffa8e4/ffffff.svg?text=ʕ•́ᴥ•̀ʔ&font=Lato" alt="User Avatar" class="w-8 h-8 rounded-full">
+                 </div>
+                 <div class="flex max-w-96 bg-white rounded-lg p-3 gap-3">
+                   <p class="text-gray-700">Hey Bob, how's it going?</p>
+                 </div>
+               </div>
+               
+               <!-- Outgoing Message -->
+               <div class="flex justify-end mb-4 cursor-pointer">
+                 <div class="flex max-w-96 bg-indigo-500 text-white rounded-lg p-3 gap-3">
+                   <p>Hi Alice! I'm good, just finished a great book. How about you?</p>
+                 </div>
+                 <div class="w-9 h-9 rounded-full flex items-center justify-center ml-2">
+                   <img src="https://placehold.co/200x/b7a8ff/ffffff.svg?text=ʕ•́ᴥ•̀ʔ&font=Lato" alt="My Avatar" class="w-8 h-8 rounded-full">
+                 </div>
+               </div>
+               
+               <!-- Incoming Message -->
+               <div class="flex mb-4 cursor-pointer">
+                 <div class="w-9 h-9 rounded-full flex items-center justify-center mr-2">
+                   <img src="https://placehold.co/200x/ffa8e4/ffffff.svg?text=ʕ•́ᴥ•̀ʔ&font=Lato" alt="User Avatar" class="w-8 h-8 rounded-full">
+                 </div>
+                 <div class="flex max-w-96 bg-white rounded-lg p-3 gap-3">
+                   <p class="text-gray-700">That book sounds interesting! What's it about?</p>
+                 </div>
+               </div>
+               
+               <!-- Outgoing Message -->
+               <div class="flex justify-end mb-4 cursor-pointer">
+                 <div class="flex max-w-96 bg-indigo-500 text-white rounded-lg p-3 gap-3">
+                   <p>It's about an astronaut stranded on Mars, trying to survive. Gripping stuff!</p>
+                 </div>
+                 <div class="w-9 h-9 rounded-full flex items-center justify-center ml-2">
+                   <img src="https://placehold.co/200x/b7a8ff/ffffff.svg?text=ʕ•́ᴥ•̀ʔ&font=Lato" alt="My Avatar" class="w-8 h-8 rounded-full">
+                 </div>
+               </div>
+               
+               <!-- Incoming Message -->
+               <div class="flex mb-4 cursor-pointer">
+                 <div class="w-9 h-9 rounded-full flex items-center justify-center mr-2">
+                   <img src="https://placehold.co/200x/ffa8e4/ffffff.svg?text=ʕ•́ᴥ•̀ʔ&font=Lato" alt="User Avatar" class="w-8 h-8 rounded-full">
+                 </div>
+                 <div class="flex max-w-96 bg-white rounded-lg p-3 gap-3">
+                   <p class="text-gray-700">I'm intrigued! Maybe I'll borrow it from you when you're done?</p>
+                 </div>
+               </div>
+               
+               <!-- Outgoing Message -->
+               <div class="flex justify-end mb-4 cursor-pointer">
+                 <div class="flex max-w-96 bg-indigo-500 text-white rounded-lg p-3 gap-3">
+                   <p>Of course! I'll drop it off at your place tomorrow.</p>
+                 </div>
+                 <div class="w-9 h-9 rounded-full flex items-center justify-center ml-2">
+                   <img src="https://placehold.co/200x/b7a8ff/ffffff.svg?text=ʕ•́ᴥ•̀ʔ&font=Lato" alt="My Avatar" class="w-8 h-8 rounded-full">
+                 </div>
+               </div>
+               
+               <!-- Incoming Message -->
+               <div class="flex mb-4 cursor-pointer">
+                 <div class="w-9 h-9 rounded-full flex items-center justify-center mr-2">
+                   <img src="https://placehold.co/200x/ffa8e4/ffffff.svg?text=ʕ•́ᴥ•̀ʔ&font=Lato" alt="User Avatar" class="w-8 h-8 rounded-full">
+                 </div>
+                 <div class="flex max-w-96 bg-white rounded-lg p-3 gap-3">
+                   <p class="text-gray-700">Thanks, you're the best!</p>
+                 </div>
+               </div>
+               
+               <!-- Outgoing Message -->
+               <div class="flex justify-end mb-4 cursor-pointer">
+                 <div class="flex max-w-96 bg-indigo-500 text-white rounded-lg p-3 gap-3">
+                   <p>Anytime! Let me know how you like it. 😊</p>
+                 </div>
+                 <div class="w-9 h-9 rounded-full flex items-center justify-center ml-2">
+                   <img src="https://placehold.co/200x/b7a8ff/ffffff.svg?text=ʕ•́ᴥ•̀ʔ&font=Lato" alt="My Avatar" class="w-8 h-8 rounded-full">
+                 </div>
+               </div>
+               
+               <!-- Incoming Message -->
+               <div class="flex mb-4 cursor-pointer">
+                 <div class="w-9 h-9 rounded-full flex items-center justify-center mr-2">
+                   <img src="https://placehold.co/200x/ffa8e4/ffffff.svg?text=ʕ•́ᴥ•̀ʔ&font=Lato" alt="User Avatar" class="w-8 h-8 rounded-full">
+                 </div>
+                 <div class="flex max-w-96 bg-white rounded-lg p-3 gap-3">
+                   <p class="text-gray-700">So, pizza next week, right?</p>
+                 </div>
+               </div>
+               
+               <!-- Outgoing Message -->
+               <div class="flex justify-end mb-4 cursor-pointer">
+                 <div class="flex max-w-96 bg-indigo-500 text-white rounded-lg p-3 gap-3">
+                   <p>Absolutely! Can't wait for our pizza date. 🍕</p>
+                 </div>
+                 <div class="w-9 h-9 rounded-full flex items-center justify-center ml-2">
+                   <img src="https://placehold.co/200x/b7a8ff/ffffff.svg?text=ʕ•́ᴥ•̀ʔ&font=Lato" alt="My Avatar" class="w-8 h-8 rounded-full">
+                 </div>
+               </div>
+               <!-- Incoming Message -->
+               <div class="flex mb-4 cursor-pointer">
+                 <div class="w-9 h-9 rounded-full flex items-center justify-center mr-2">
+                   <img src="https://placehold.co/200x/ffa8e4/ffffff.svg?text=ʕ•́ᴥ•̀ʔ&font=Lato" alt="User Avatar" class="w-8 h-8 rounded-full">
+                 </div>
+                 <div class="flex max-w-96 bg-white rounded-lg p-3 gap-3">
+                   <p class="text-gray-700">Hoorayy!!</p>
+                 </div>
+               </div>
+               
+                <!-- A message -->
+            </div>
+
+            
+
+            
+
+            
+
+
         </div>
-      </div>
+
+
+        <footer class="bg-white border-t border-gray-300 p-4 absolute bottom-0 w-3/4">
+                <div class="flex items-center">
+                    <input type="text" placeholder="Type a message..." class="w-full p-2 rounded-md border border-gray-400 focus:outline-none focus:border-blue-500">
+                    <button class="bg-indigo-500 text-white px-4 py-2 rounded-md ml-2">Send</button>
+                </div>
+        </footer>
+
+        
+        
+
+
     </div>
-  </div>
-</footer>
-  </section>
-</main>
+
+
+
+
 
 
 </body>
+
 </html>
