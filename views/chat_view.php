@@ -26,32 +26,10 @@
                     <img src="https://cdn.discordapp.com/embed/avatars/0.png" alt="">
                     
                 </div>
-                <a href="index.php?page=profil" class=" font-bold text-xl text-white">View profil</a> 
+                <a class=" font-bold text-xl text-white">View profil</a> 
             </div>
 
             <hr class=" mb-2">
-
-            <div href="./profil.php" class="cursor-pointer mb-1 p-2 flex gap-3 items-center border border-gray-900 rounded-lg hover:bg-gray-700">
-                <div
-                    class="bg-white h-12 w-12 flex items-center justify-center text-black text-2xl font-semibold rounded-3xl mb-1 overflow-hidden">
-                    <img src="https://cdn.discordapp.com/embed/avatars/0.png" alt="">
-                    
-                </div>
-                <h6 class=" font-bold text-xl text-white">twiter</h6> 
-            </div>
-
-
-
-            <div class="cursor-pointer mb-1 p-2 flex gap-3 items-center border border-gray-900 rounded-lg hover:bg-gray-700">
-                <div
-                    class="bg-white h-12 w-12 flex items-center justify-center text-black text-2xl font-semibold rounded-3xl mb-1 overflow-hidden">
-                    <img src="https://cdn.discordapp.com/embed/avatars/0.png" alt="">
-                    
-                </div>
-                <h6 class=" font-bold text-xl text-white">facebook</h6> 
-            </div>
-
-            
 
             <a href="index.php?page=create_room" class="cursor-pointer p-1 flex gap-2 border border-gray-900 rounded-lg hover:bg-gray-700">
                 <div
@@ -65,18 +43,62 @@
             </a>
 
 
+            <div
+                class="cursor-pointer mb-1 p-2 flex gap-3 items-center border border-gray-900 rounded-lg hover:bg-gray-700">
+                <div
+                    class="bg-white h-12 w-12 flex items-center justify-center text-black text-2xl font-semibold rounded-3xl mb-1 overflow-hidden">
+                    <img src="https://cdn.discordapp.com/embed/avatars/0.png" alt="">
+
+                </div>
+                <h6 class=" font-bold text-xl text-white">frends</h6>
+            </div>
+
+            <div
+                class="cursor-pointer mb-1 p-2 flex gap-3 items-center border border-gray-900 rounded-lg hover:bg-gray-700">
+                <div
+                    class="bg-white h-12 w-12 flex items-center justify-center text-black text-2xl font-semibold rounded-3xl mb-1 overflow-hidden">
+                    <img src="https://cdn.discordapp.com/embed/avatars/0.png" alt="">
+
+                </div>
+                <h6 class=" font-bold text-xl text-white">rooms</h6>
+            </div>
+            
+
+            
+
+            
+            <div
+                class=" h-64 cursor-pointer mb-1 p-2 flex flex-col gap-3 items-center border border-gray-900 bg-gray-700 overflow-scroll">
+                
+                <h6 class=" font-bold text-xl text-white rounded-lg hover:bg-gray-900 w-full">facebook</h6>
+                <h6 class=" font-bold text-xl text-white rounded-lg hover:bg-gray-900 w-full">facebook</h6>
+                <h6 class=" font-bold text-xl text-white rounded-lg hover:bg-gray-900 w-full">facebook</h6>
+                <h6 class=" font-bold text-xl text-white rounded-lg hover:bg-gray-900 w-full">facebook</h6>
+                <h6 class=" font-bold text-xl text-white rounded-lg hover:bg-gray-900 w-full">facebook</h6>
+                <h6 class=" font-bold text-xl text-white rounded-lg hover:bg-gray-900 w-full">facebook</h6>
+                <h6 class=" font-bold text-xl text-white rounded-lg hover:bg-gray-900 w-full">facebook</h6>
+                <h6 class=" font-bold text-xl text-white rounded-lg hover:bg-gray-900 w-full">facebook</h6>
+                <h6 class=" font-bold text-xl text-white rounded-lg hover:bg-gray-900 w-full">facebook</h6>
+                <h6 class=" font-bold text-xl text-white rounded-lg hover:bg-gray-900 w-full">facebook</h6>
+                <h6 class=" font-bold text-xl text-white rounded-lg hover:bg-gray-900 w-full">facebook</h6>
+                <h6 class=" font-bold text-xl text-white rounded-lg hover:bg-gray-900 w-full">facebook</h6>
+            </div>
+
+
 
         </div>
         
         <!-- Chat content -->
         <div class="flex-1 flex flex-col w-3/4 bg-gray-700 overflow-hidden">
             <!-- Top bar -->
-            <div class="border-b border-gray-600 flex px-6 py-2 items-center flex-none shadow-xl">
+            <div class="border-b border-gray-600 flex px-6 py-2 items-center justify-between shadow-xl">
                 <div class="flex flex-col">
                     <h3 class="text-white mb-1 font-bold text-xl ">
                         <span class="text-gray-400">#</span> general
                     </h3>
+
                 </div>
+                <a href="index.php?page=logout" class="bg-blue-700 px-6 py-2 rounded-lg text-white font-bold hover:bg-blue-600">LOG OUT</a>
             </div>
             <!-- Chat messages -->
             <div class="px-6 py-4 flex-1 overflow-y-scroll">
