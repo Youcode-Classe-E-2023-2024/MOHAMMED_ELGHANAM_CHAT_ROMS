@@ -11,12 +11,12 @@ if (isset($_POST['send'])){
     $_SESSION['user_id'] = $user['user_id'];
     $_SESSION['name'] = $user['name'];
     $_SESSION['email'] = $user['email'];
-    echo "<pre>";
-    print_r($user);
-    echo "<pre>";
+    // echo "<pre>";
+    // print_r($user);
+    // echo "<pre>";
      
-    // header("location: ../VIEW/chat.php");
-    echo "jab data";
+    header("location: index.php?page=chat");
+    // echo "jab data";
     exit();  
 
 
