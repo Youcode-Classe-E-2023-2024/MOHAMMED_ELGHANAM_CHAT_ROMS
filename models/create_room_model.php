@@ -15,5 +15,20 @@ class create_room{
         }
     }
 
+        public function select_room(){
+        global $db;
+        $sql = "SELECT * FROM room";
+        $result = mysqli_query($db,$sql);
+        if ($result) {
+            $rows = array();
+            while ($row = mysqli_fetch_assoc($result)) {
+                $rows[] = $row;
+            }
+            return $rows;
+        }
+
+
+    }
+
 
 }

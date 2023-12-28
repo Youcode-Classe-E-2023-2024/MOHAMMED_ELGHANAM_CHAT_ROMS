@@ -1,3 +1,13 @@
+<?php
+    
+    $rooms = new create_room();
+    $rooms->select_room();
+
+
+
+     
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -67,21 +77,10 @@
             
 
             
-            <div
-                class=" h-64 cursor-pointer mb-1 p-2 flex flex-col gap-3 items-center border border-gray-900 bg-gray-700 overflow-scroll">
-                
-                <h6 class=" font-bold text-xl text-white rounded-lg hover:bg-gray-900 w-full">facebook</h6>
-                <h6 class=" font-bold text-xl text-white rounded-lg hover:bg-gray-900 w-full">facebook</h6>
-                <h6 class=" font-bold text-xl text-white rounded-lg hover:bg-gray-900 w-full">facebook</h6>
-                <h6 class=" font-bold text-xl text-white rounded-lg hover:bg-gray-900 w-full">facebook</h6>
-                <h6 class=" font-bold text-xl text-white rounded-lg hover:bg-gray-900 w-full">facebook</h6>
-                <h6 class=" font-bold text-xl text-white rounded-lg hover:bg-gray-900 w-full">facebook</h6>
-                <h6 class=" font-bold text-xl text-white rounded-lg hover:bg-gray-900 w-full">facebook</h6>
-                <h6 class=" font-bold text-xl text-white rounded-lg hover:bg-gray-900 w-full">facebook</h6>
-                <h6 class=" font-bold text-xl text-white rounded-lg hover:bg-gray-900 w-full">facebook</h6>
-                <h6 class=" font-bold text-xl text-white rounded-lg hover:bg-gray-900 w-full">facebook</h6>
-                <h6 class=" font-bold text-xl text-white rounded-lg hover:bg-gray-900 w-full">facebook</h6>
-                <h6 class=" font-bold text-xl text-white rounded-lg hover:bg-gray-900 w-full">facebook</h6>
+            <div class=" h-64 cursor-pointer mb-1 p-2 flex flex-col gap-3 items-center border border-gray-900 bg-gray-700 overflow-scroll">
+                <?php foreach ($rooms as $room): ?>
+                <h6 class=" font-bold text-xl text-white rounded-lg hover:bg-gray-900 w-full"><?= $room['name_room']; ?></h6>
+                <?php endforeach; ?>
             </div>
 
 
