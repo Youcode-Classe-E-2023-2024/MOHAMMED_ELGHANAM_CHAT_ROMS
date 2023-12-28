@@ -26,13 +26,14 @@ public function insert($sql)
         }
     }
 
-public function select($sql,$email,$new_password){    
-    $result = mysqli_query($this->conn,$sql);
+public function select($sql,$email,$new_password){
+    global $db;    
+    $result = mysqli_query($this->db,$sql);
     $row = mysqli_fetch_assoc($result);
     if ($email === $row['email'] && $new_password === $row['password'] ){
         return $row;
     }else {          
-        echo "ERROR : " . mysqli_error($this->conn);
+        echo "ERROR : " . mysqli_error($this->db);
     }
 }
 

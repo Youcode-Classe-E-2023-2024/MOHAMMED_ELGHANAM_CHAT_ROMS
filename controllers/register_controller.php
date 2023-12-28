@@ -1,7 +1,10 @@
 <?php
-session_start();
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
 
-$db = new CHAT();
+
+$OBJECT_CHAT = new CHAT();
 
 
 if (isset($_POST['send'])){
@@ -14,11 +17,11 @@ if (isset($_POST['send'])){
     $_SESSION['email'] = $email;
     $_SESSION['password'] = $password;   
 
-    $haching_pass = $db->hach_password($password);
+    $haching_pass = $OBJECT_CHAT->hach_password($password);
 
     $sql="INSERT INTO signup (name, email, password)
     VALUES ('$name', '$email', '$haching_pass')";
-    $db->insert($sql);
+    $OBJECT_CHAT->insert($sql);
     
 
 }
