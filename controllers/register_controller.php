@@ -1,6 +1,6 @@
 <?php
 session_start();
-include '..\MODEL\login.php';
+
 $db = new CHAT();
 
 
