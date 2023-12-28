@@ -2,7 +2,7 @@
 
 class CHAT {
 
-    global $db;
+    
 // gaching password
 public function hach_password($password)
     {
@@ -14,11 +14,12 @@ public function hach_password($password)
 // insert in data base
 public function insert($sql)
     {   
+        global $db;
         //echo"<br> hello ";
-        $result = mysqli_query($this->conn,$sql);
+        $result = mysqli_query($this->db,$sql);
         // echo"<br> hello ";
         if (!$result) {
-            echo mysqli_error($this->conn);
+            echo mysqli_error($this->db);
         }else { 
             echo"NADIIII";        
             header("Location:..\VIEW\login.php");
