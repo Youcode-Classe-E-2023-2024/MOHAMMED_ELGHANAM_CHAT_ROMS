@@ -6,8 +6,9 @@ class User
     public $email;
     public $username;
     private $password;
+    protected $db;
 
-    public function __construct($id)
+    function __construct($id)
     {
         global $db;
 
@@ -23,17 +24,17 @@ class User
     static function getAll()
     {
         global $db;
-        $result = $db->query("SELECT * FROM users");
+        $result = $db->query("SELECT * FROM signup");
         return $result->fetch_all(MYSQLI_ASSOC);
     }
 
     function edit()
     {
         global $db;
-        return $db->query("UPDATE users SET users_email = '$this->email', users_username = '$this->username' WHERE users_id = '$this->id'");
+        return $db->query("UPDATE signup SET users_email = '$this->email', users_username = '$this->username' WHERE users_id = '$this->id'");
     }
 
-    public function setPassword($pwd)
+    function setPassword($pwd)
     {
         $this->password = password_hash($pwd, PASSWORD_DEFAULT);
     }

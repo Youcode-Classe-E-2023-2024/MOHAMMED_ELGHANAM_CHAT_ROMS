@@ -1,9 +1,9 @@
 <?php
 
-echo '<h3>- Home Controller -</h3>';
+echo '<h3>- Home Controller2 -</h3>';
 
 if (isset($_POST['login'])) {
-    echo 'Is login';
+    header('location: index.php?page=register');
 }
 
 if (isset($_POST['logout'])) {

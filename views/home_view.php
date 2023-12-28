@@ -1,4 +1,4 @@
-<table>
+<!-- <table>
     <thead>
     <tr>
         <th>Email</th>
@@ -7,13 +7,7 @@
     </thead>
     <tbody>
 
-    <?php foreach ($users as $user) : ?>
-        <tr>
-            <td><?= $user['users_email'] ?></td>
-            <td><?= $user['users_username'] ?></td>
-        </tr>
-    <?php endforeach; ?>
-
+   
     </tbody>
 </table>
 
@@ -21,3 +15,10 @@
     <button type="submit" name="login">Login</button>
     <button type="submit" name="logout">Logout</button>
 </form>
+<p>moha</p> -->
+<?php  // foreach ($users as $user) : ?>
+        <!-- <tr>
+            <td><?= // $user['email'] ?></td>
+            <td><?= // $user['name'] ?></td>
+        </tr> -->
+    <?php // endforeach; ?>

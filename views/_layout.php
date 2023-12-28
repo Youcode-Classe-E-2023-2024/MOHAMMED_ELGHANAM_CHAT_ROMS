@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="<?= PATH ?>assets/css/style.css">
 </head>
 <body>
-    <h1><?= ucfirst($page) ?> View</h1>
+    
 
     <main>
         <?php include_once 'views/' . $page . '_view.php'; ?>
     </main>
-
+    
     <footer></footer>
     <script src="<?= PATH ?>assets/js/main.js"></script>
 </body>
