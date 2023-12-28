@@ -1,12 +1,4 @@
-<?php
-    
-    $rooms = new create_room();
-    $rooms->select_room();
 
-
-
-     
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -15,6 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../jquery-3.7.1.min.js"></script>
     <title>Document</title>
 </head>
 
@@ -78,9 +71,9 @@
 
             
             <div class=" h-64 cursor-pointer mb-1 p-2 flex flex-col gap-3 items-center border border-gray-900 bg-gray-700 overflow-scroll">
-                <?php foreach ($rooms as $room): ?>
-                <h6 class=" font-bold text-xl text-white rounded-lg hover:bg-gray-900 w-full"><?= $room['name_room']; ?></h6>
-                <?php endforeach; ?>
+                
+                
+                <h6 class=" font-bold text-xl text-white rounded-lg hover:bg-gray-900 w-full">facebook</h6>
             </div>
 
 
@@ -164,8 +157,8 @@
 
         <footer class="bg-white border-t border-gray-300 p-4 absolute bottom-0 w-3/4">
                 <div class="flex items-center">
-                    <input type="text" placeholder="Type a message..." class="w-full p-2 rounded-md border border-gray-400 focus:outline-none focus:border-blue-500">
-                    <button class="bg-indigo-500 text-white px-4 py-2 rounded-md ml-2">Send</button>
+                    <input type="text" name="message" id="message" placeholder="Type a message..." class="w-full p-2 rounded-md border border-gray-400 focus:outline-none focus:border-blue-500">
+                    <input type="submit" id="btn" value="send" class="bg-indigo-500 text-white px-4 py-2 rounded-md ml-2">
                 </div>
         </footer>
 
@@ -176,7 +169,24 @@
     </div>
 
 
-
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                var message = $("#message").val();
+                $.ajax({
+                    "type":"POST",
+                    "url":"index.php?page=message",
+                    "data":{
+                        message:message
+                    }
+                    success:function(){
+                        console.log("rah dkhal hna");
+                        $("#message").val('');
+                    }
+                })
+            });
+        });
+    </script>
 
 
 
