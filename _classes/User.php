@@ -6,7 +6,7 @@ class User
     public $email;
     public $username;
     private $password;
-    protected $db;
+    public $db;
 
     function __construct($id)
     {
